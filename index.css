@@ -8,4 +8,115 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+}
+
+/* Typography */
+
+h1 {
+  margin: 0;
+  font-size: 1.75rem;
+}
+
+/* Site Banner */
+
+.site-banner {
+  height: 30vh;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("images/banner-img.webp");
+  background-size: cover;
+  background-position: 0 27%;
+}
+
+.banner-content {
+  color: #ffffff;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.site-heading,
+.banner-content a {
+  color: #ffffff;
+  margin: auto 0;
+}
+
+.banner-content a {
+  font-size: 0.75rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.banner-content a:hover {
+  text-decoration: underline;
+}
+
+/* Search Bar */
+
+.search-bar,
+.search-bar i {
+  background-color: #ffffff;
+}
+
+.search-bar i,
+.search-bar button {
+  color: #555;
+}
+
+.search-bar {
+  position: relative;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.search-bar i {
+  padding: 10px 25px 10px 10px;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  padding: 8px;
+  outline: none;
+}
+
+.search-bar button {
+  font-family: inherit;
+  border: none;
+  outline: 1px solid #ccc;
+  padding: 10px 15px;
+  background: #f9fafb;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background: #555;
+  color: #f9fafb;
+}
+
+.list-content {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  color: #dfdddd;
+}
+
+.fa-film {
+  font-size: 3.5rem;
+}
+
+.list-heading {
+  margin: 0;
+  font-size: 1rem;
 }
