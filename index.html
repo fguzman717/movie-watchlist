@@ -23,7 +23,7 @@
     <header class="site-banner">
       <div class="banner-content">
         <h1 class="site-heading">Find your film</h1>
-        <a href="">My Watchlist</a>
+        <a href="#">My Watchlist</a>
       </div>
       <div class="search-bar">
         <i class="fa-solid fa-magnifying-glass"></i>
@@ -35,12 +35,15 @@
           aria-label="Search for a movie"
           required
         />
-        <button>Search</button>
+        <button class="search-btn">Search</button>
       </div>
     </header>
     <main class="list-content">
-      <i class="fa-solid fa-film"></i>
-      <h3 class="list-heading">Start Exploring</h3>
+      <div class="initial-state">
+        <i class="fa-solid fa-film"></i>
+        <h3 class="list-heading">Start Exploring</h3>
+      </div>
+      <div class="populated-state"></div>
     </main>
     <script src="index.js"></script>
   </body>
