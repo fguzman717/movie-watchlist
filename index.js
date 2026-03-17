@@ -33,6 +33,7 @@ console.log("script loaded");
 const watchListLink = document.querySelector("a");
 const initialState = document.querySelector(".initial-state");
 const populatedState = document.querySelector(".populated-state");
+const noDataState = document.querySelector(".no-data-state");
 const searchValue = document.getElementById("search");
 const searchBtn = document.querySelector(".search-btn");
 
@@ -44,12 +45,13 @@ watchListLink.addEventListener("click", (e) => {
 searchBtn.addEventListener("click", (e) => {
   e.preventDefault();
 
+  noDataState.style.display = "none";
+  populatedState.innerHTML = "";
+
   if (searchValue.value) {
     initialState.style.display = "none";
-    populatedState.innerHTML = "";
   } else {
     initialState.style.display = "flex";
-    populatedState.innerHTML = "";
     return;
   }
 
@@ -59,6 +61,7 @@ searchBtn.addEventListener("click", (e) => {
     .then((res) => res.json())
     .then((data) => {
       if (data.Response === "False") {
+        noDataState.style.display = "flex";
         return console.log(data.Error);
       }
 

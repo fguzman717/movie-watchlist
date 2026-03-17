@@ -122,14 +122,28 @@ p {
   margin: 3rem 2rem 2rem;
 }
 
-.initial-state {
-  min-height: 60vh;
-  display: flex;
+.initial-state,
+.no-data-state {
+  min-height: 50vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.no-data-state {
+  display: none;
+  text-align: center;
+}
+
+.initial-state {
+  display: flex;
   gap: 4px;
-  color: #dfdddd;
+}
+
+.fa-film,
+.list-heading {
+  /* color: #dfdddd; */
+  color: #ccc;
 }
 
 .fa-film {
