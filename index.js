@@ -1,33 +1,3 @@
-// Requirements:
-//   [x] Two pages - index.html and watchlist.html
-//   [x] index.html = search page. Calls the OMDB API with the title searched for and
-//      displays the search results
-//   [x] Button to "add to watchlist" which saves that data to local storage
-//   [x] watchlist.html loads and displays data from local storage
-
-// To Do:
-// [X] Add assets:
-//       (*) image asset for header
-//       (*) font family "Inter"
-//       (*) plus, minus, magnifying glass, and movie reel icons.
-//           - <i class="fa-solid fa-circle-plus"></i>
-//           - <i class="fa-solid fa-circle-minus"></i>
-//           - <i class="fa-solid fa-magnifying-glass"></i>
-//           - <i class="fa-solid fa-film"></i>
-// [X] Set up the search page's layout for the initial state
-// [X] Set up the search page's layout for the populated state
-//       (*) Access the OMDB API to fully render the populated state layout
-//       (*) Use local storage to add/remove movies
-// [X] Set up the search page's layout for the 'no data' state
-// [X] Set up the empty watchlist page's layout
-//       (*) Include a link that takes you back to the search page to start
-//           adding movies
-// [X] Set up the populated watchlist page's layout
-//       (*) Access local storage to fully render the populated state of
-//           the watchlist page
-//       (*) Apply same logic for removing movies from list with local
-//           storage
-
 // Stretch Goals:
 // [] Add styling for dark mode version of the site
 
