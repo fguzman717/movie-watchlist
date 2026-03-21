@@ -78,14 +78,14 @@ if (searchBtn) {
 
     const formattedSearchValue = searchValue.value.split(" ").join("+");
 
-    fetch(`http://www.omdbapi.com/?apikey=de8ce1b1&s=${formattedSearchValue}`)
+    fetch(`https://www.omdbapi.com/?apikey=de8ce1b1&s=${formattedSearchValue}`)
       .then((res) => res.json())
       .then(processSearchResults);
   });
 }
 
 function fetchMovieDetails(id) {
-  fetch(`http://www.omdbapi.com/?apikey=de8ce1b1&i=${id}`)
+  fetch(`https://www.omdbapi.com/?apikey=de8ce1b1&i=${id}`)
     .then((res) => res.json())
     .then((data) => {
       populatedState.innerHTML += renderMovieCard(data);
