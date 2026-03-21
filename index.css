@@ -6,6 +6,7 @@
 
 html,
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
@@ -156,7 +157,6 @@ p {
   border-radius: 8px;
   overflow: hidden;
   margin: 0 auto;
-  /* width: 300px; */
   width: clamp(300px, 800px, 70vw);
 }
 
@@ -277,6 +277,44 @@ img.movie-poster {
 .description {
   text-align: center;
   color: #6b7280;
+}
+
+/* Dark Mode User Preference */
+@media (prefers-color-scheme: dark) {
+  body,
+  .list-content {
+    background-color: #121212;
+    color: white;
+  }
+
+  .search-bar,
+  .search-bar i,
+  .search-bar input {
+    background-color: #2e2e2f;
+  }
+
+  .search-bar button {
+    background-color: #555;
+  }
+
+  .search-bar i,
+  .search-bar input,
+  .search-bar button {
+    color: #ffffff;
+  }
+
+  .search-bar button:hover {
+    background: #f9fafb;
+    color: #555;
+  }
+
+  .initial-state a {
+    color: #ccc;
+  }
+
+  .description {
+    color: #a5a5a5;
+  }
 }
 
 /* Larger Screen Breakpoints */
