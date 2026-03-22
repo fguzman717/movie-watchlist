@@ -312,6 +312,10 @@ img.movie-poster {
     color: #ccc;
   }
 
+  img.movie-poster {
+    border: 1px solid #ccc;
+  }
+
   .description {
     color: #a5a5a5;
   }
